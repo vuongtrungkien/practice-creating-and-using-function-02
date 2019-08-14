@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimum value 3 numbers</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt("Enter the number"));
+    let number2 = parseInt(prompt("Enter the number"));
+    let number3 = parseInt(prompt("Enter the number"));
+
+    function checkMin(num1, num2, num3) {
+        let min = num1;
+        if (min < num2 && min < num3) {
+            return min;
+        } else if (num2 < num3) {
+            min = num2;
+            return min;
+        } else {
+            min = num3;
+            return min;
+        }
+    }
+    alert("" + checkMin(number1,number2,number3));
+</script>
+</body>
+</html>

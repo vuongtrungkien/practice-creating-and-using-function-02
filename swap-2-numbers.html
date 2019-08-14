@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap 2 numbers</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt("Enter first number"));
+    let number2 = parseInt(prompt("Enter 2nd number"));
+
+    function swapNumber(num1,num2) {
+        let swap = 0;
+        swap = num1;
+        num1 = num2;
+        num2 = swap;
+        alert(num1);
+        alert(num2);
+    }
+    swapNumber(number1,number2);
+</script>
+</body>
+</html>

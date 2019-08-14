@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function of factorial calculation</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Enter the number"));
+
+    function factorial(num) {
+        let sum = 1;
+        for (let i = 1; i <= num; i++) {
+            sum *= i;
+        }
+        return sum;
+    }
+
+    alert("Factorial of " + number + "  :  " + factorial(number));
+</script>
+</body>
+</html>
